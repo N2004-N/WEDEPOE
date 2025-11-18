@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Enquiry | Home of Hope</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Enquire about sponsoring, volunteering or donating to Home of Hope.">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="left-section">
+      <img src="images/Hope3.jpg" alt="Home of Hope logo" class="logo">
+    </div>
+
+    <input id="menu-toggle" type="checkbox">
+    <label for="menu-toggle" class="menu-icon"><span></span><span></span><span></span></label>
+
+    <ul class="nav-links">
+      <li><a href="Homepage.html">Home</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+      <li><a href="Gallery1.html">Gallery</a></li>
+      <li><a href="news1.html">News</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+      <a class="btn" href="ContactUs.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <div class="text-section">
+      <h1>Make an Enquiry</h1>
+      <p>
+        Use this form to enquire about <strong>sponsorships</strong>, 
+        <strong>donations</strong> or <strong>volunteering</strong>. 
+        After validation, we will provide an estimated cost or availability message.
+      </p>
+
+      <form id="enquiry-form" novalidate>
+        <div class="form-field">
+          
+          <input name="name" placeholder="Full name" aria-label="Full name" required>
+
+          <input name="email" type="email" placeholder="Email address" aria-label="Email address" required>
+
+          <select name="type" aria-label="Enquiry type" required>
+            <option value="">-- Select Enquiry Type --</option>
+            <option value="sponsorship">Child Sponsorship (monthly)</option>
+            <option value="donation">One-time Donation</option>
+            <option value="volunteer">Volunteer</option>
+          </select>
+
+          <input 
+            name="quantity" 
+            type="number" 
+            placeholder="Quantity (e.g. months or items)" 
+            aria-label="Quantity" 
+            min="1" required
+          >
+
+          <textarea 
+            name="notes" 
+            class="full" 
+            placeholder="Additional notes (optional)" 
+            aria-label="Additional notes"></textarea>
+
+          <button class="submit-button full" type="submit">Submit Enquiry</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Home of Hope</p>
+  </footer>
+</body>
+</html>

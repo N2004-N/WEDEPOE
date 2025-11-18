@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us | Home of Hope</title>
+
+  <meta name="description" content="Contact Home of Hope for donations, volunteering and enquiries. Find our address, phone number, email and working hours.">
+  <meta name="keywords" content="Home of Hope, Contact, Donate, Volunteer, Sponsorship, Johannesburg charity, help children">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Leaflet Maps -->
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="left-section">
+      <img src="images/Hope3.jpg" alt="Home of Hope logo" class="logo">
+    </div>
+
+    <input id="menu-toggle" type="checkbox">
+    <label for="menu-toggle" class="menu-icon"><span></span><span></span><span></span></label>
+
+    <ul class="nav-links">
+      <li><a href="Homepage.html">Home</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+      <li><a href="Gallery1.html">Gallery</a></li>
+      <li><a href="news1.html">News</a></li>
+      <li><a href="ContactUs.html" class="active">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-buttons">
+      <a class="btn" href="enquiry.html">Enquire</a>
+    </div>
+  </nav>
+
+  <div class="search-container">
+    <input type="search" placeholder="Search..." aria-label="Search the site">
+    <button type="submit">Search</button>
+  </div>
+
+  <main>
+    <section id="section-wrapper" class="box-wrapper" aria-label="Contact information and form">
+
+      <div class="info-wrap">
+        <h1 class="info-title">Contact Us</h1>
+        <h2 class="info-sub-title">If you would like to support our cause, please reach out:</h2>
+
+        <ul class="info-details">
+          <li><strong>Phone:</strong> <a href="tel:+27111234567">+27 11 123 4567</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@homeofhope.org.za">info@homeofhope.org.za</a></li>
+          <li><strong>Address:</strong> 123 Hope Street, Johannesburg, South Africa</li>
+          <li><strong>Office Hours:</strong> Monday – Friday, 08:00 – 16:00</li>
+        </ul>
+
+        <!-- Accessible map -->
+        <div id="map" role="img" aria-label="Map showing location of Home of Hope"></div>
+
+        <ul class="social-icons" aria-label="Social media links">
+          <li><a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        </ul>
+      </div>
+
+      <div class="form-wrap">
+        <form id="contact-form" method="post" novalidate>
+          <h2 class="form-title">Send Us A Message</h2>
+
+          <div class="form-field">
+            <input name="name" placeholder="Full name" aria-label="Full name" required>
+            <input name="email" placeholder="Email address" type="email" aria-label="Email" required>
+            <input name="phone" placeholder="Phone (optional)" aria-label="Phone">
+
+            <select name="subject" aria-label="Subject">
+              <option value="General">General Enquiry</option>
+              <option value="Donate">Donate</option>
+              <option value="Volunteer">Volunteer</option>
+              <option value="Sponsorship">Sponsorship</option>
+            </select>
+
+            <textarea name="message" class="full" placeholder="Write your message here..." aria-label="Message" required></textarea>
+
+            <button type="submit" class="submit-button full">Send Message</button>
+          </div>
+        </form>
+
+        <section style="margin-top:20px;">
+          <h2>Support Us</h2>
+          <p>We gratefully accept donations and sponsorships. Sponsorship gives a child access to education and care.</p>
+
+          <h3>Banking Details</h3>
+          <p>
+            <strong>Bank:</strong> Standard Bank<br>
+            <strong>Branch:</strong> Bayside Shopping Centre, Table View<br>
+            <strong>Account Name:</strong> Home of Hope<br>
+            <strong>Account Number:</strong> 272800988<br>
+            <strong>Branch Code:</strong> 022209
+          </p>
+        </section>
+      </div>
+
+    </section>
+  </main>
+
+  <footer><p>&copy; 2025 Home of Hope</p></footer>
+</body>
+</html>

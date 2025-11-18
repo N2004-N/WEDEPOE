@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://n2004-n.github.io/WEDEPOE/sitemap.xml
